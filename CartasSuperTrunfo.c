@@ -91,13 +91,24 @@ int main() {
     // Exibi os dados coletados
     printf("\nCartas cadastradas com sucesso!\n");
     printf("-----------------------------\n");
-    printf("Carta 01: %c %s - %s\nPopulação: %d\nÁrea: %.f km²\nPIB: %.f\nPontos Turísticos: %d\n",
-           estado1, codigoCarta1, nomeCidade1, populacao1, area1, pib1, pontosTuristicos1);
+    printf("Carta 01");
+    printf("Estado: %c\n", estado1);
+    printf("Código da Carta: %c\n", codigoCarta1);
+    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.f km²\n", area1);
+    printf("PIB: %.f\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("-----------------------------\n");
-    printf("Carta 02: %c %s - %s\nPopulação: %d\nÁrea: %.f km²\nPIB: %.f\nPontos Turísticos: %d\n",
-           estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
+    printf("Carta 02");
+    printf("Estado: %c\n", estado2);
+    printf("Código da Carta: %c\n", codigoCarta2);
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.f km²\n", area2);
+    printf("PIB: %.f\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("-----------------------------\n");
-
     printf("Pressione qualquer tecla para sair...\n");
     scanf(" %c"); // Espera por uma tecla para encerrar o programa
     return 0;
