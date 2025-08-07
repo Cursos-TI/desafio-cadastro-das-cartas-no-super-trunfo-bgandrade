@@ -29,7 +29,7 @@ int main() {
     Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
     */
     char estado1, estado2;
-    char codigoCarta1[3], codigoCarta2[3];
+    char codigoCarta1[4], codigoCarta2[4];
     char nomeCidade1[50], nomeCidade2[50];
     int populacao1, populacao2;
     float area1, area2;
@@ -47,10 +47,10 @@ int main() {
     scanf(" %c", &estado1);
 
     printf("Código da Carta (ex: A01): ");
-    scanf("%s", codigoCarta1);
+    scanf("%3s", codigoCarta1);
 
     printf("Nome da Cidade: ");
-    scanf("%s", nomeCidade1);
+    scanf("%49[^\n]", nomeCidade1);
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -71,10 +71,10 @@ int main() {
     scanf(" %c", &estado2);
 
     printf("Código da Carta (ex: A01): ");
-    scanf("%s", codigoCarta2);
+    scanf("%3s", codigoCarta2);
 
     printf("Nome da Cidade: ");
-    scanf("%s", nomeCidade2);
+    scanf("%49[^\n]", nomeCidade2);
 
     printf("População: ");
     scanf("%d", &populacao2);
@@ -93,7 +93,7 @@ int main() {
     printf("-----------------------------\n");
     printf("Carta 01");
     printf("Estado: %c\n", estado1);
-    printf("Código da Carta: %c\n", codigoCarta1);
+    printf("Código da Carta: %s\n", codigoCarta1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.f km²\n", area1);
@@ -102,7 +102,7 @@ int main() {
     printf("-----------------------------\n");
     printf("Carta 02");
     printf("Estado: %c\n", estado2);
-    printf("Código da Carta: %c\n", codigoCarta2);
+    printf("Código da Carta: %s\n", codigoCarta2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
     printf("Área: %.f km²\n", area2);
