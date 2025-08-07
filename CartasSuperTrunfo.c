@@ -31,10 +31,10 @@ int main() {
     char estado1, estado2;
     char codigoCarta1[4], codigoCarta2[4];
     char nomeCidade1[50], nomeCidade2[50];
-    int populacao1, populacao2;
+    unsigned long int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
-    int pontosTuristicos1, pontosTuristicos2;
+    unsigned int pontosTuristicos1, pontosTuristicos2;
 
     // Apresentação do jogo e coleta de dados
     printf("Super Trunfo - Jogo de Cartas\n");
@@ -96,8 +96,8 @@ int main() {
     printf("Código da Carta: %s\n", codigoCarta1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
-    printf("Área: %.f km²\n", area1);
-    printf("PIB: %.f\n", pib1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f\n", pib1);
     printf("Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("-----------------------------\n");
     printf("Carta 02");
@@ -105,8 +105,8 @@ int main() {
     printf("Código da Carta: %s\n", codigoCarta2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
-    printf("Área: %.f km²\n", area2);
-    printf("PIB: %.f\n", pib2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f\n", pib2);
     printf("Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("-----------------------------\n");
     printf("Pressione qualquer tecla para sair...\n");
