@@ -98,6 +98,7 @@ int main() {
            estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
     printf("-----------------------------\n");
 
-
+    printf("Pressione qualquer tecla para sair...\n");
+    scanf(" %c"); // Espera por uma tecla para encerrar o programa
     return 0;
 }
