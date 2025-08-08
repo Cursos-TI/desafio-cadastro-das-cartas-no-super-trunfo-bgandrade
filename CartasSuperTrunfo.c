@@ -70,7 +70,7 @@ int main() {
     scanf(" %49[^\n]", nomeCidade1);
 
     printf("População: ");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Área (em km²): ");
     scanf("%f", &area1);
@@ -94,7 +94,7 @@ int main() {
     scanf(" %49[^\n]", nomeCidade2);
 
     printf("População: ");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Área (em km²): ");
     scanf("%f", &area2);
@@ -105,12 +105,12 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Cálculo da densidade populacional e PIB per capita
+    // Cálculo da densidade populacional e PIB per capita, convertendo PIB de bilhões para reais
     densidadePopulacional1 = (float)populacao1 / area1;
-    pibPerCapita1 = pib1 / (float)populacao1;
+    pibPerCapita1 = (pib1 * 1000000000.0f) / (float)populacao1; 
 
     densidadePopulacional2 = (float)populacao2 / area2;
-    pibPerCapita2 = pib2 / (float)populacao2;
+    pibPerCapita2 = (pib2 * 1000000000.0f) / (float)populacao2;
 
     // Exibi os dados coletados
     printf("\nCartas cadastradas com sucesso!\n");
