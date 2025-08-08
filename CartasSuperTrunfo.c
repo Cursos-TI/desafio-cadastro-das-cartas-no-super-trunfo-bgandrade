@@ -67,7 +67,7 @@ int main() {
     scanf("%3s", codigoCarta1);
 
     printf("Nome da Cidade: ");
-    scanf("%49[^\n]", nomeCidade1);
+    scanf(" %49[^\n]", nomeCidade1);
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -91,7 +91,7 @@ int main() {
     scanf("%3s", codigoCarta2);
 
     printf("Nome da Cidade: ");
-    scanf("%49[^\n]", nomeCidade2);
+    scanf(" %49[^\n]", nomeCidade2);
 
     printf("População: ");
     scanf("%d", &populacao2);
@@ -115,7 +115,7 @@ int main() {
     // Exibi os dados coletados
     printf("\nCartas cadastradas com sucesso!\n");
     printf("-----------------------------\n");
-    printf("Carta 01");
+    printf("Carta 01\n");
     printf("Estado: %c\n", estado1);
     printf("Código da Carta: %s\n", codigoCarta1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
@@ -126,7 +126,7 @@ int main() {
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional1);
     printf("PIB per Capita: %.2f\n", pibPerCapita1);
     printf("-----------------------------\n");
-    printf("Carta 02");
+    printf("Carta 02\n");
     printf("Estado: %c\n", estado2);
     printf("Código da Carta: %s\n", codigoCarta2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
