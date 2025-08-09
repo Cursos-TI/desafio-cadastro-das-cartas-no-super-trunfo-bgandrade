@@ -140,10 +140,10 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código da Carta: %s\n", codigoCarta1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
-    printf("População: %d\n", populacao1);
+    printf("População: %lu\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de Reais\n", pib1);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Pontos Turísticos: %u\n", pontosTuristicos1);
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional1);
     printf("PIB per Capita: %.2f\n", pibPerCapita1);
     printf("Super Poder: %.2f\n", superPoder1);
@@ -152,10 +152,10 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código da Carta: %s\n", codigoCarta2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
-    printf("População: %d\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de Reais\n", pib2);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Pontos Turísticos: %u\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
