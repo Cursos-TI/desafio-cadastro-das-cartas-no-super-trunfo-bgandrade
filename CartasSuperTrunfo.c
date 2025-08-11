@@ -94,7 +94,7 @@ int main() {
     scanf("%f", &pib1);
 
     printf("Número de Pontos Turísticos: ");
-    scanf("%d", &pontosTuristicos1);
+    scanf("%u", &pontosTuristicos1);
 
     // Coleta de dados para a carta 02
     printf("Por favor, insira os dados da carta 02:\n");
