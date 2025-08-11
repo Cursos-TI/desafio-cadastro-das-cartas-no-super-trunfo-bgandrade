@@ -118,7 +118,7 @@ int main() {
     scanf("%f", &pib2);
 
     printf("Número de Pontos Turísticos: ");
-    scanf("%d", &pontosTuristicos2);
+    scanf("%u", &pontosTuristicos2);
 
     // Cálculo da densidade populacional e PIB per capita, convertendo PIB de bilhões para reais
     densidadePopulacional1 = (float)populacao1 / area1;
