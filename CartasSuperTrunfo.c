@@ -54,7 +54,6 @@ int main() {
     exibindo o resultado da comparação (1 para verdadeiro – Carta 1 vence – e 0 para falso – Carta 2 vence).
     */
 
-
     char estado1, estado2;
     char codigoCarta1[4], codigoCarta2[4];
     char nomeCidade1[50], nomeCidade2[50];
@@ -65,8 +64,6 @@ int main() {
     float densidadePopulacional1, densidadePopulacional2;
     float pibPerCapita1, pibPerCapita2;
     float superPoder1, superPoder2;
-    char resultadoPopulacao, resultadoArea, resultadoPib, resultadoPontosTuristicos, 
-            resultadoDensidadePopulacional, resultadoPibPerCapita, resultadoSuperPoder;
 
     // Apresentação do jogo e coleta de dados
     printf("Super Trunfo - Jogo de Cartas\n");
@@ -160,28 +157,18 @@ int main() {
     printf("PIB per Capita: %.2f\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
     printf("-----------\n");
-
-    printf("Comparando as cartas...\n");
-    // Comparação das cartas
-    resultadoPopulacao = populacao1 > populacao2;
-    resultadoArea = area1 > area2;
-    resultadoPib = pib1 > pib2;
-    resultadoPontosTuristicos = pontosTuristicos1 > pontosTuristicos2;
-    resultadoDensidadePopulacional = densidadePopulacional1 < densidadePopulacional2; // Menor densidade vence
-    resultadoPibPerCapita = pibPerCapita1 > pibPerCapita2;
-    resultadoSuperPoder = superPoder1 > superPoder2;
-    
+      
     // Exibição dos resultados das comparações    
     printf("Comparação das Cartas:\n");
-    printf("População: Carta %d venceu (%d)\n", resultadoPopulacao ? 1 : 2, resultadoPopulacao);
-    printf("Área: Carta %d venceu (%d)\n", resultadoArea ? 1 : 2, resultadoArea);
-    printf("PIB: Carta %d venceu (%d)\n", resultadoPib ? 1 : 2, resultadoPib);
-    printf("Pontos Turísticos: Carta %d venceu (%d)\n", resultadoPontosTuristicos ? 1 : 2, resultadoPontosTuristicos);
-    printf("Densidade Populacional: Carta %d venceu (%d)\n", resultadoDensidadePopulacional ? 1 : 2, resultadoDensidadePopulacional);
-    printf("PIB per Capita: Carta %d venceu (%d)\n", resultadoPibPerCapita ? 1 : 2, resultadoPibPerCapita);
-    printf("Super Poder: Carta %d venceu (%d)\n", resultadoSuperPoder ? 1 : 2, resultadoSuperPoder);
+    printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
+    printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
+    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
+    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontosTuristicos1 > pontosTuristicos2);
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidadePopulacional1 < densidadePopulacional2); // Menor densidade vence
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2);
+    printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
 
-    printf("Pressione qualquer tecla para sair...\n");
+    printf("Pressione ENTER para sair...\n");
     scanf(" %c"); // Espera por uma tecla para encerrar o programa
     return 0;
 }
